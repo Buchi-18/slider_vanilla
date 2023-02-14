@@ -1,0 +1,65 @@
+.slide-container {
+  position: relative;
+  width: 80%;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+.vanilla-slider {
+  overflow: hidden;
+}
+.vanilla-slider li {
+  float: left;
+}
+.vanilla-slider .vanillaSlider-cell img {
+  width: 100%;
+  vertical-align: middle;
+}
+/*************** ボタン ***************/
+.vanilla-dots {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+}
+.vanilla-dots button {
+  font-size: 0.8rem;
+  border-radius: 50%;
+  padding: 3px 7px;
+  margin: 0 7px;
+  background-color: #efefef;
+  border: 1px solid #666;
+  box-shadow: 0 1px 1px #666;
+}
+/*************** 矢印 ***************/
+#vanillaArrows .prev-arrow,
+#vanillaArrows .next-arrow {
+  display: inline-block;
+  position: absolute;
+  bottom: 32px;
+  font-size: 2rem;
+}
+#vanillaArrows .prev-arrow {
+  left: 20%;
+}
+#vanillaArrows .next-arrow {
+  right: 20%;
+}
+/*************** レスポンシブ ***************/
+@media screen and (max-width: 960px) {
+  .slide-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .slide-container img {
+    max-height: 65vh;
+    object-fit: cover;
+  }
+  #vanillaArrows {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slide-container {
+    margin-top: 20%;
+  }
+}
