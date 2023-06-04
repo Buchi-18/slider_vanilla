@@ -15,4 +15,4 @@ if (window.matchMedia("(max-width: 750px)").matches) {
 }
 
 ■GitHub Pages
-https://buchi-18.github.io/slier_vanilla
+https://buchi-18.github.io/slider_vanilla
